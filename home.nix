@@ -14,7 +14,7 @@
   home.stateVersion = "24.05"; # Please read the comment before changing.
 
   home.sessionVariables = {
-    NIXOS_ALLOW_UNFREE = 1;
+    NIXPKGS_ALLOW_UNFREE = 1;
   };
 
   services.caffeine.enable = true;
