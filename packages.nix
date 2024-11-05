@@ -41,7 +41,7 @@
     vesktop
     xplr
     reaper
-    (tetrio-desktop.override { withTetrioPlus = true; })
+    (tetriofix.tetrio-desktop.override { withTetrioPlus = true; })
     (retroarch.override {
       cores = with libretro; [
         snes9x

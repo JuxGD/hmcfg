@@ -7,6 +7,7 @@
     master.url = "github:NixOS/nixpkgs/master"; 
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable"; # unstable branch is default
     staging.url = "github:NixOS/nixpkgs/staging";
+    tetriofix.url = "github:huantianad/nixpkgs";
 
     # Specify the source of Home Manager
     home-manager = {
