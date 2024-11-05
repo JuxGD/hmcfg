@@ -1,10 +1,9 @@
-{ config, pkgs, inputs, ... }:
+{ config, lib, pkgs, inputs, ... }:
 
 let
   stable = inputs.stable.legacyPackages.${pkgs.system};
   master = inputs.master.legacyPackages.${pkgs.system};
   staging = inputs.staging.legacyPackages.${pkgs.system};
-  tetriofix = inputs.tetriofix.legacyPackages.${pkgs.system};
 in
 {
   home.packages = with pkgs; [    
@@ -47,7 +46,7 @@ in
     vesktop
     xplr
     reaper
-    (tetriofix.tetrio-desktop.override { withTetrioPlus = true; })
+    tetrio-desktop
     (retroarch.override {
       cores = with libretro; [
         snes9x
@@ -56,6 +55,7 @@ in
       ];
     })
   ];
+
   services.flatpak = {
     enable = true;
     update.onActivation = true;
