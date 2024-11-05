@@ -13,6 +13,8 @@
   # release notes.
   home.stateVersion = "24.05"; # Please read the comment before changing.
 
+  nixpkgs.config.allowUnfree = true;
+
   home.sessionVariables = {
     NIXPKGS_ALLOW_UNFREE = 1;
   };
