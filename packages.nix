@@ -63,6 +63,7 @@ in
       "org.torproject.torbrowser-launcher"
       "com.obsproject.Studio"
       "com.github.tchx84.Flatseal"
+      "studio.kx.carla"
     ];
   };
 }
