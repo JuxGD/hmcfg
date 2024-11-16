@@ -24,5 +24,13 @@ in
     NIXPKGS_ALLOW_UNFREE = 1;
   };
 
+  programs = {
+    direnv = {
+      enable = true;
+      enableZshIntegration = true;
+      nix-direnv.enable = true;
+    };
+  };
+
   services.caffeine.enable = true;
 }
