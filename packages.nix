@@ -7,7 +7,12 @@ let
 in
 {
   home.packages = with pkgs; [    
-    steam
+    (steam.override {
+      extraPkgs = (pkgs: [
+        pkgs.corefonts
+        pkgs.vistafonts
+      ]);
+    })
     vscode-fhs
     pkgs.kdePackages.kdeconnect-kde
     pkgs.prismlauncher
