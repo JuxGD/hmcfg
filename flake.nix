@@ -36,7 +36,6 @@
           ./files.nix
           ./packages.nix
           ./terminal.nix
-          ./wayland.nix
         ];
 
         # Optionally use extraSpecialArgs
