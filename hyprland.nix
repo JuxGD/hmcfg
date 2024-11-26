@@ -13,9 +13,9 @@ in
 
       "$terminal" = "konsole";
 
-      bind = {
-        CTRL + ALT, code:68, exec, konsole;
-      };
+      bind = [
+        "CTRL + ALT, code:68, exec, konsole"
+      ];
 
       decoration = {
         shadow.enabled = false;
