@@ -33,4 +33,16 @@ in
   };
 
   services.caffeine.enable = true;
+
+  wayland.windowManager.hyprland = {
+    enable = true;
+    
+    settings = {
+      
+      decoration = {
+        shadow.enabled = false;
+      };
+
+    };
+  };
 }
