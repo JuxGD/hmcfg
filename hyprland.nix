@@ -11,10 +11,12 @@ in
     
     settings = {
 
+      monitor = , preferred, auto, "1";
+
       "$terminal" = "konsole";
 
       bind = [
-        "CTRL + ALT, code:68, exec, konsole"
+        "CTRL + ALT, T, exec, konsole"
       ];
 
       decoration = {
