@@ -69,6 +69,7 @@ in
       "com.obsproject.Studio"
       "com.github.tchx84.Flatseal"
       "studio.kx.carla"
+      "org.blender.Blender"
     ];
   };
 }

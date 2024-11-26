@@ -15,7 +15,7 @@
     };
 
     # Specify the source of nix-flatpak
-    nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=v0.4.1";
+    nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=v0.5.0";
   };
 
   outputs = { nixpkgs, home-manager, ... }@inputs:
