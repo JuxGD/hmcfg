@@ -53,6 +53,7 @@ in
     reaper
     tetrio-desktop
     blender
+    inkscape-with-extensions
     (retroarch.override {
       cores = with libretro; [
         snes9x
