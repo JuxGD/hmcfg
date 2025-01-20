@@ -66,6 +66,8 @@ in
       "com.github.tchx84.Flatseal"
       "studio.kx.carla"
       "org.upscayl.Upscayl"
+      "sh.ppy.osu"
+      "io.mrarm.mcpelauncher"
     ];
   };
 }
