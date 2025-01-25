@@ -55,6 +55,7 @@ in
     blender
     inkscape-with-extensions
     retroarch-full
+    qbittorrent
   ];
 
   services.flatpak = {
