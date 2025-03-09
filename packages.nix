@@ -16,7 +16,7 @@ in
     vscode-fhs
     pkgs.kdePackages.kdeconnect-kde
     pkgs.prismlauncher
-    kdenlive
+    kdePackages.kdenlive
     krita
     brave
     tenacity
