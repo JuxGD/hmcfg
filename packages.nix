@@ -26,7 +26,7 @@ in
     xorg.xev
     wev
     xorg.xwininfo
-    godot_4
+    godot-mono
     obsidian
     syncthing
     zsh
