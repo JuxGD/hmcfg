@@ -37,6 +37,7 @@
           ./files.nix
           ./packages.nix
           ./terminal.nix
+          ./secret.nix
         ];
 
         # Optionally use extraSpecialArgs
