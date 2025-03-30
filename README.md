@@ -36,7 +36,7 @@ Jux's opinionatedly organized configuration for his home-manager install. NOT me
 
 - Unfree packages allowed
 - Change the user and home path accordingly, you're obviously not "j" (unless you are ig)
-- `secret.nix` is not included, because it's a secret :3. Remove it from `flake.nix` or add it and do whatever you want with it.
+- `secret-thing` is a local flake, it's a secret :3. Remove the input from `flake.nix` or add it and do whatever you want with it.
 
 ## Contributing
 

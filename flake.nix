@@ -16,6 +16,10 @@
 
     # Specify the source of nix-flatpak
     nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=v0.5.0";
+
+    # Specifiy the source of a secret fourth thing :3
+
+    secret-thingy.url = "path:../secret-thingy";
   };
 
   outputs = { nixpkgs, home-manager, ... }@inputs:
@@ -37,7 +41,6 @@
           ./files.nix
           ./packages.nix
           ./terminal.nix
-          ./secret.nix
         ];
 
         # Optionally use extraSpecialArgs
