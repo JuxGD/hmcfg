@@ -30,10 +30,6 @@ in
       enableZshIntegration = true;
       nix-direnv.enable = true;
     };
-    gnupg.agent = {
-      enable = true;
-      enableSSHSupport = true;
-    };
   };
 
   services.caffeine.enable = true;
