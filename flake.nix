@@ -29,7 +29,7 @@
     in {
       homeConfigurations."j" = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
-        inherit (secret-thingy.homeConfigurations."j")
+        inherit (secret-thingy.homeConfigurations."j");
 
         extraSpecialArgs = { inherit inputs; };
 
