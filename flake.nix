@@ -22,7 +22,7 @@
     secret-thingy.url = "path:/home/j/Desktop/secret-thingy";
   };
 
-  outputs = { nixpkgs, home-manager, secret-thingy.url, ... }@inputs:
+  outputs = { nixpkgs, home-manager, secret-thingy, ... }@inputs:
     let
       system = "x86_64-linux";
       pkgs = nixpkgs.legacyPackages.${system};
