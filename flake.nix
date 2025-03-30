@@ -19,16 +19,17 @@
 
     # Specifiy the source of a secret fourth thing :3
 
-    secret-thingy.url = "path:../secret-thingy";
+    secret-thingy.url = "path:/home/j/Desktop/secret-thingy";
   };
 
-  outputs = { nixpkgs, home-manager, ... }@inputs:
+  outputs = { nixpkgs, home-manager, secret-thingy.url, ... }@inputs:
     let
       system = "x86_64-linux";
       pkgs = nixpkgs.legacyPackages.${system};
     in {
       homeConfigurations."j" = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
+        inherit (secret-thingy.homeConfigurations."j")
 
         extraSpecialArgs = { inherit inputs; };
 
