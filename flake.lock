@@ -20,6 +20,27 @@
         "type": "github"
       }
     },
+    "home-manager_2": {
+      "inputs": {
+        "nixpkgs": [
+          "secret-thingy",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1742508854,
+        "narHash": "sha256-vQQTIl4+slrcu7ftVKNBql9ngBdY0dcYGujdT7zIVp0=",
+        "owner": "nix-community",
+        "repo": "home-manager",
+        "rev": "da0181819479ddc034a3db9a77ed21ea3bcc0668",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-community",
+        "repo": "home-manager",
+        "type": "github"
+      }
+    },
     "master": {
       "locked": {
         "lastModified": 1742510510,
@@ -68,14 +89,43 @@
         "type": "github"
       }
     },
+    "nixpkgs_2": {
+      "locked": {
+        "lastModified": 0,
+        "narHash": "sha256-Txwa5uO+qpQXrNG4eumPSD+hHzzYi/CdaM80M9XRLCo=",
+        "path": "/nix/store/vxji3rfnchgl7c7iihisnfpf3kdx9vvi-source",
+        "type": "path"
+      },
+      "original": {
+        "id": "nixpkgs",
+        "type": "indirect"
+      }
+    },
     "root": {
       "inputs": {
         "home-manager": "home-manager",
         "master": "master",
         "nix-flatpak": "nix-flatpak",
         "nixpkgs": "nixpkgs",
+        "secret-thingy": "secret-thingy",
         "stable": "stable",
         "staging": "staging"
+      }
+    },
+    "secret-thingy": {
+      "inputs": {
+        "home-manager": "home-manager_2",
+        "nixpkgs": "nixpkgs_2"
+      },
+      "locked": {
+        "lastModified": 1743367667,
+        "narHash": "sha256-XcU6HXD3z5WXXq1xlJ3prdKBt2WELx2aZVp7L16J/uo=",
+        "path": "/home/j/Desktop/secret-thingy",
+        "type": "path"
+      },
+      "original": {
+        "path": "/home/j/Desktop/secret-thingy",
+        "type": "path"
       }
     },
     "stable": {
