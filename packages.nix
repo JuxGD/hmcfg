@@ -69,6 +69,7 @@ in
       "org.upscayl.Upscayl"
       "sh.ppy.osu"
       "io.mrarm.mcpelauncher"
+      "im.dino.Dino"
     ];
   };
 }
