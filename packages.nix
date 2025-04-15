@@ -70,6 +70,7 @@ in
       "sh.ppy.osu"
       "io.mrarm.mcpelauncher"
       "im.dino.Dino"
+      "org.gimp.GIMP"
     ];
   };
 }
