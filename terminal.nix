@@ -7,7 +7,7 @@ let
 in
 {
   programs = {
-    thefuck.enable = true;
+    pay-respects.enable = true;
 
     home-manager.enable = true;
 
@@ -29,7 +29,7 @@ in
 
       oh-my-zsh = {
         enable = true;
-        plugins = [ "git" "thefuck" ];
+        plugins = [ "git" ];
         theme = "robbyrussell";
       };
     };
