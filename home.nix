@@ -23,7 +23,7 @@ in
   home.sessionVariables = lib.attrsets.mergeAttrs [
     {
       NIXPKGS_ALLOW_UNFREE = 1;
-    };
+    }
   ];
 
   programs = {
