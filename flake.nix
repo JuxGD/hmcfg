@@ -36,7 +36,7 @@
         modules = [
           inputs.nix-flatpak.homeManagerModules.nix-flatpak
           (import ./home.nix {
-            secretEnv = secret-thingy.env
+            secretEnv = secret-thingy.env;
           })
           ./hyprland.nix
           ./files.nix
