@@ -20,9 +20,11 @@ in
 
   nixpkgs.config.allowUnfree = true;
 
-  home.sessionVariables = {
-    NIXPKGS_ALLOW_UNFREE = 1;
-  };
+  home.sessionVariables = lib.attrsets.mergeAttrs [
+    {
+      NIXPKGS_ALLOW_UNFREE = 1;
+    };
+  ];
 
   programs = {
     direnv = {

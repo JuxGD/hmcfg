@@ -28,7 +28,6 @@
     in {
       homeConfigurations."j" = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
-        inherit (secret-thingy.homeConfigurations."j");
 
         extraSpecialArgs = { inherit inputs; };
 
@@ -36,7 +35,9 @@
         # the path to your home.nix.
         modules = [
           inputs.nix-flatpak.homeManagerModules.nix-flatpak
-          ./home.nix
+          (import ./home.nix {
+            secretEnv = secret-thingy.env
+          })
           ./hyprland.nix
           ./files.nix
           ./packages.nix
