@@ -20,7 +20,7 @@ in
 
   nixpkgs.config.allowUnfree = true;
 
-  home.sessionVariables = lib.attrsets.mergeAttrs [
+  home.sessionVariables = lib.mergeAttrsList [
     {
       NIXPKGS_ALLOW_UNFREE = 1;
     }
