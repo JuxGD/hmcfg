@@ -1,4 +1,4 @@
-{ config, lib, pkgs, inputs, ... }:
+{ config, lib, pkgs, inputs, secret-thingy, ... }:
 
 let
   stable = inputs.stable.legacyPackages.${pkgs.system};
@@ -23,7 +23,8 @@ in
   home.sessionVariables = lib.attrsets.mergeAttrs [
     {
       NIXPKGS_ALLOW_UNFREE = 1;
-    }
+    },
+    secret-thingy.env
   ];
 
   programs = {
