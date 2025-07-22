@@ -16,9 +16,6 @@
 
     # Specify the source of nix-flatpak
     nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=v0.5.0";
-
-    # Specify the source of a secret fourth thing :3
-    secret-thingy.url = "path:/home/j/Desktop/secret-thingy";
   };
 
   outputs = { nixpkgs, home-manager, ... }@inputs:
