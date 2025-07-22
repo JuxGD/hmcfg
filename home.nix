@@ -1,11 +1,9 @@
-{ config, lib, pkgs, inputs, secret-thingy, ... }:
+{ config, lib, pkgs, inputs, ... }:
 
 let
   stable = inputs.stable.legacyPackages.${pkgs.system};
   master = inputs.master.legacyPackages.${pkgs.system};
   staging = inputs.staging.legacyPackages.${pkgs.system};
-
-  secret-thingy = inputs.secret-thingy.env;
 in
 {
   home.username = "j";
@@ -26,7 +24,6 @@ in
     {
       NIXPKGS_ALLOW_UNFREE = 1;
     }
-    secret-thingy
   ];
 
   programs = {
