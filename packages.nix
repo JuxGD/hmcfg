@@ -37,7 +37,6 @@ in
     p7zip
     pcsx2
     vkbasalt
-    obs-studio-plugins.obs-vkcapture
     usbimager
     rpcs3
     heroic
