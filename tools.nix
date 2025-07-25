@@ -19,7 +19,7 @@ in
     tenacity
     yt-dlp
     wev
-    tclock
+    clock-rs
     blender
     xplr
     reaper
