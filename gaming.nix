@@ -6,19 +6,6 @@ let
   staging = inputs.staging.legacyPackages.${pkgs.system};
 in
 {
-  programs = {
-    steam = {
-      enable = true;
-      package = (pkgs.steam.override {
-        extraPkgs = (pkgs: [
-          pkgs.corefonts
-          pkgs.vistafonts
-        ]);
-      });
-      gamescopeSession.enable = true;
-    };
-  };
-
   home.packages = with pkgs; [
     prismlauncher
     pcsx2
