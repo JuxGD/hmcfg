@@ -25,9 +25,6 @@ in
 
       cp -r ${niri-dotfiles} $INTERMEDIARY_DIR
 
-      rm -rf "$INTERMEDIARY_DIR/screenshots"
-      rm -f "$INTERMEDIARY_DIR/README.md"
-
       cp -rf "$INTERMEDIARY_DIR/''\*" "$TARGET_DIR"
       rm -rf "$INTERMEDIARY_DIR"
 
