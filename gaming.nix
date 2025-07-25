@@ -17,6 +17,8 @@ in
     vkbasalt
     gogdl
     ckan
-    tetrio-plus
+    (tetrio-desktop.overrides {
+      withTetrioPlus = true;
+    })
   ];
 }
