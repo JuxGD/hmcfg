@@ -8,7 +8,7 @@ let
   niri-dotfiles = builtins.fetchFromGitHub {
     owner = "ShibamRoy9826";
     repo = "niri-dotfiles";
-    rev = "b941deb448c1aaea743cf709b6cd62a751fb1e37"
+    rev = "b941deb448c1aaea743cf709b6cd62a751fb1e37";
   }; # this is just a little test :3
 in
 {
