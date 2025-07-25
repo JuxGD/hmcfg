@@ -13,22 +13,38 @@ let
   }; # this is just a little test :3
 in
 {
-  home.file."niri-dotfiles".source = niri-dotfiles;
+  home.file.".config/anyrun" = {
+    source = niri-dotfiles/anyrun;
+    recursive = true;
+  };
 
-  home.activation = {
-    applyNiriDotfiles = lib.hm.dag.entryAfter ["writeBoundary"] ''
-      echo "Applying niri dotfiles..."
+  home.file.".config/fastfetch" = {
+    source = niri-dotfiles/fastfetch;
+    recursive = true;
+  };
 
-      SOURCE_DIR="${niri-dotfiles}"
-      INTERMEDIARY_DIR="$HOME/niri-dotfiles"
-      TARGET_DIR="$HOME/.config"
+  home.file.".config/mpd" = {
+    source = niri-dotfiles/mpd;
+    recursive = true;
+  }
 
-      cp -r ${niri-dotfiles} $INTERMEDIARY_DIR
+  home.file.".config/ncmpcpp" = {
+    source = niri-dotfiles/ncmpcpp;
+    recursive = true;
+  };
 
-      cp -rf "$INTERMEDIARY_DIR/\*" "$TARGET_DIR"
-      rm -rf "$INTERMEDIARY_DIR"
+  home.file.".config/niri" = {
+    source = niri-dotfiles/niri;
+    recursive = true;
+  };
 
-      echo "niri dotfiles applied!"
-    '';
+  home.file.".config/waybar" = {
+    source = niri-dotfiles/waybar;
+    recursive = true;
+  };
+
+  home.file.".config/wlogout" = {
+    source = niri-dotfiles/wlogout;
+    recursive = true;
   };
 }
