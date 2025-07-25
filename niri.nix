@@ -14,37 +14,37 @@ let
 in
 {
   home.file.".config/anyrun" = {
-    source = niri-dotfiles/anyrun;
+    source = ${niri-dotfiles}/anyrun;
     recursive = true;
   };
 
   home.file.".config/fastfetch" = {
-    source = niri-dotfiles/fastfetch;
+    source = ${niri-dotfiles}/fastfetch;
     recursive = true;
   };
 
   home.file.".config/mpd" = {
-    source = niri-dotfiles/mpd;
+    source = ${niri-dotfiles}/mpd;
     recursive = true;
   };
 
   home.file.".config/ncmpcpp" = {
-    source = niri-dotfiles/ncmpcpp;
+    source = ${niri-dotfiles}/ncmpcpp;
     recursive = true;
   };
 
   home.file.".config/niri" = {
-    source = niri-dotfiles/niri;
+    source = ${niri-dotfiles}/niri;
     recursive = true;
   };
 
   home.file.".config/waybar" = {
-    source = niri-dotfiles/waybar;
+    source = ${niri-dotfiles}/waybar;
     recursive = true;
   };
 
   home.file.".config/wlogout" = {
-    source = niri-dotfiles/wlogout;
+    source = ${niri-dotfiles}/wlogout;
     recursive = true;
   };
 }
