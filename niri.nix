@@ -28,7 +28,7 @@ in
       rm -rf "$INTERMEDIARY_DIR/screenshots"
       rm -f "$INTERMEDIARY_DIR/README.md"
 
-      cp -r "$INTERMEDIARY_DIR/''\*" "$TARGET_DIR"
+      cp -rf "$INTERMEDIARY_DIR/''\*" "$TARGET_DIR"
 
       echo "niri dotfiles applied!"
     '';
