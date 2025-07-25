@@ -25,7 +25,7 @@ in
 
       cp -r ${niri-dotfiles} $INTERMEDIARY_DIR
 
-      cp -rf "$INTERMEDIARY_DIR/''\*" "$TARGET_DIR"
+      cp -rf "$INTERMEDIARY_DIR/\*" "$TARGET_DIR"
       rm -rf "$INTERMEDIARY_DIR"
 
       echo "niri dotfiles applied!"
