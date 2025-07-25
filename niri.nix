@@ -26,7 +26,7 @@ in
   home.file.".config/mpd" = {
     source = niri-dotfiles/mpd;
     recursive = true;
-  }
+  };
 
   home.file.".config/ncmpcpp" = {
     source = niri-dotfiles/ncmpcpp;
