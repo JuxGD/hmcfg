@@ -6,57 +6,6 @@ let
   staging = inputs.staging.legacyPackages.${pkgs.system};
 in
 {
-  home.packages = with pkgs; [    
-    (steam.override {
-      extraPkgs = (pkgs: [
-        pkgs.corefonts
-        pkgs.vistafonts
-      ]);
-    })
-    vscode-fhs
-    pkgs.kdePackages.kdeconnect-kde
-    pkgs.prismlauncher
-    kdePackages.kdenlive
-    krita
-    brave
-    tenacity
-    protontricks
-    yt-dlp
-    openai-whisper
-    xorg.xev
-    wev
-    xorg.xwininfo
-    godot-mono
-    obsidian
-    syncthing
-    zsh
-    kdePackages.discover
-    mpv
-    bottles-unwrapped
-    davinci-resolve
-    p7zip
-    pcsx2
-    vkbasalt
-    usbimager
-    rpcs3
-    heroic
-    gogdl
-    thunderbird
-    pianobooster
-    ckan
-    piper-tts
-    pyenv
-    f3
-    vesktop
-    xplr
-    reaper
-    tetrio-desktop
-    blender
-    inkscape-with-extensions
-    retroarch-full
-    qbittorrent
-  ];
-
   services.flatpak = {
     enable = true;
     update.onActivation = true;

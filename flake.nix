@@ -37,6 +37,11 @@
           ./files.nix
           ./packages.nix
           ./terminal.nix
+          ./gaming.nix
+          ./tools.nix
+          ./development.nix
+          ./other.nix
+          ./niri.nix
         ];
 
         # Optionally use extraSpecialArgs
