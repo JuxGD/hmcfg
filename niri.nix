@@ -9,7 +9,7 @@ let
     owner = "ShibamRoy9826";
     repo = "niri-dotfiles";
     rev = "b941deb448c1aaea743cf709b6cd62a751fb1e37";
-    hash = lib.fakeHash;
+    hash = "sha256-K3JeEJsk8ginvoPE9S2gzpyuBY0ydk+aSVh7WXMeCqU=";
   }; # this is just a little test :3
 in
 {
