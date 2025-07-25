@@ -9,9 +9,7 @@ in
   programs.neovim.enable = true;
 
   services = {
-    qbittorrent.enable = true;
     syncthing.enable = true;
-    caffeine.enable = true;
   };
 
   home.packages = with pkgs; [
