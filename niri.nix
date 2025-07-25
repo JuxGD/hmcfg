@@ -19,13 +19,16 @@ in
     applyNiriDotfiles = lib.hm.dag.entryAfter ["writeBoundary"] ''
       echo "Applying niri dotfiles..."
 
-      SOURCE_DIR="$HOME/niri-dotfiles"
+      SOURCE_DIR="${niri-dotfiles}"
+      INTERMEDIARY_DIR="$HOME/niri-dotfiles"
       TARGET_DIR="$HOME/.config"
 
-      rm -r "$SOURCE_DIR/screenshots"
-      rm "$SOURCE_DIR/README.md"
+      cp -r ${niri-dotfiles} $INTERMEDIARY_DIR
 
-      cp -r "$SOURCE_DIR*" "$TARGET_DIR"
+      rm -r "$INTERMEDIARY_DIR/screenshots"
+      rm "$INTERMEDIARY_DIR/README.md"
+
+      cp -r "$INTERMEDIARY_DIR/''\*" "$TARGET_DIR"
 
       echo "niri dotfiles applied!"
     '';
