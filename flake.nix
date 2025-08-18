@@ -33,7 +33,6 @@
         modules = [
           inputs.nix-flatpak.homeManagerModules.nix-flatpak
           ./home.nix
-          ./hyprland.nix
           ./files.nix
           ./packages.nix
           ./terminal.nix
