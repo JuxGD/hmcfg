@@ -18,7 +18,7 @@ in
     gogdl
     ckan
     (tetrio-desktop.override {
-      withTetrioPlus = false;
+      withTetrioPlus = true;
     })
   ];
 }
