@@ -10,7 +10,7 @@ in
     prismlauncher
     pcsx2
     rpcs3
-    ryujinx
+    ryubing
     heroic
     protonup
     protontricks
