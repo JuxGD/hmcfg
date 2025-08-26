@@ -7,6 +7,8 @@ let
 in
 {
   programs = {
+    neovim.enable = true;
+
     pay-respects.enable = true;
 
     home-manager.enable = true;
