@@ -22,6 +22,7 @@ in
 
   home.sessionVariables = lib.mergeAttrsList [
     {
+      OBS_THINGY_SOURCETHING_ID = $(wpctl status | grep -A 5 Sources | grep obs | cut -c 1-20 | grep -o '[0-9]\+');
       NIXPKGS_ALLOW_UNFREE = 1;
     }
   ];
