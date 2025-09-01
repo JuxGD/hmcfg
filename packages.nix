@@ -19,6 +19,7 @@ in
       "io.mrarm.mcpelauncher"
       "im.dino.Dino"
       "org.gimp.GIMP"
+      "org.kde.kdenlive"
     ];
   };
 }
