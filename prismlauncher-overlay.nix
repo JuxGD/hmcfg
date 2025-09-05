@@ -2,7 +2,7 @@
   nixpkgs.overlays = [
     (final: prev: {
       prismlauncher-unwrapped = prev.prismlauncher-unwrapped.overrideAttrs (finalAttrs: previousAttrs: {
-        src = previousAttrs:fetchgit {
+        src = previousAttrs.fetchgit {
           url = "file:///home/j/GitRepos/PrismLauncher";
           rev = "70465067cb6bf192675bbda47eb88b175c2a7174";
           fetchSubmodules = true;
