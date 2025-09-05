@@ -40,7 +40,7 @@
           ./tools.nix
           ./development.nix
           ./other.nix
-          ./prismlauncher-overlay.nix
+          (import ./prismlauncher-overlay.nix)
           ];
 
         # Optionally use extraSpecialArgs
