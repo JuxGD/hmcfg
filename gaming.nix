@@ -13,7 +13,7 @@ in
           (prev.fetchpatch {
             url = "file:///home/j/its-a/secret.patch";
 	    hash = "07sx98d422589gxr8wflfpkdd0k44kbagxl3b51i56ky2wfix7rc";
-	  };
+	  });
 	];
       });
     })
