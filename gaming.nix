@@ -11,7 +11,7 @@ in
       prismlauncher-unwrapped = prev.prismlauncher-unwrapped.overrideAttrs (finalAttrs: previousAttrs: {
         src = builtins.fetchGit {
           url = "file:///home/j/GitRepos/PrismLauncher";
-	  rev = "70465067cb6bf192675bbda47eb88b175c2a7174";
+	  rev = "b67879c8e9fc4f9d2624075a9e69583ddc69bfcd";
 	};
       });
     })
