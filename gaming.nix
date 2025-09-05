@@ -11,7 +11,7 @@ in
       prismlauncher-unwrapped = prev.prismlauncher-unwrapped.overrideAttrs (old: {
         patches = (old.patches or []) ++ [
             (prev.fetchpatch {
-              url = "http://localhost:3000/JuxGD/its-a/secret.patch";
+              url = "http://localhost:3000/JuxGD/its-a/src/branch/main/secret.patch";
 	      hash = "";
 	    })
 	];
