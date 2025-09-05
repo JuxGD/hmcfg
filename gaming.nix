@@ -13,7 +13,6 @@ in
           url = "file:///home/j/GitRepos/PrismLauncher";
 	  rev = "70465067cb6bf192675bbda47eb88b175c2a7174";
 	  fetchSubmodules = true;
-	  deepClone = true;
 	  hash = "sha256-yy0q+bky80LtK1GWzz7qpM+aAGrOqLuewbid8WT1ilk=";
 	};
       });
