@@ -12,7 +12,7 @@ in
         patches = (old.patches or []) ++ [
           (prev.fetchpatch {
             url = "file:///home/j/its-a/secret.patch";
-            hash = "0ch706271vq0k2v9syppq0amg8gl367aq3xah0c701is040s9853";
+            hash = "sha256-0ch706271vq0k2v9syppq0amg8gl367aq3xah0c701is040s9853=";
           })
 	];
       });
