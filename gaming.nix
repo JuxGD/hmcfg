@@ -16,7 +16,7 @@ in
 	  deepClone = true;
 	  hash = "bafddfaa18a3c345c3135c1455eb209c4b9142737e396a65588c4126153ca5ee";
 	};
-      )};
+      });
     })
   ];
 
