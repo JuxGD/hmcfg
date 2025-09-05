@@ -10,10 +10,7 @@ in
     (final: prev: {
       prismlauncher-unwrapped = prev.prismlauncher-unwrapped.overrideAttrs (old: {
         patches = (old.patches or []) ++ [
-          (prev.fetchpatch {
-            url = "file:///home/j/its-a/secret.patch";
-            hash = "";
-          })
+            /home/j/its-a/secret.patch
 	];
       });
     })
