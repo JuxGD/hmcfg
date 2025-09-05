@@ -12,7 +12,7 @@ in
         patches = (old.patches or []) ++ [
             (prev.fetchpatch {
               url = "http://localhost:3000/JuxGD/its-a/secret.patch";
-	      hash = '';
+	      hash = "";
 	    })
 	];
       });
