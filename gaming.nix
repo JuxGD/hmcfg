@@ -21,7 +21,7 @@ in
   ];
 
   home.packages = with pkgs; [
-    prismlauncher-secret
+    prismlauncher
     pcsx2
     rpcs3
     ryubing
