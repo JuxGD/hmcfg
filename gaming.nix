@@ -14,7 +14,7 @@ in
 	  rev = "70465067cb6bf192675bbda47eb88b175c2a7174";
 	  fetchSubmodules = true;
 	  deepClone = true;
-	  hash = "sha256-01jz3bfgw9givbr08ac0r5mvhckvch8nmhi521gq2w1xgr0ffw43";
+	  hash = "sha256-01jz3bfgw9givbr08ac0r5mvhckvch8nmhi521gq2w1xgr0ffw43=";
 	};
       });
     })
