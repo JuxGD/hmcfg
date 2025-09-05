@@ -12,8 +12,8 @@ in
         patches = (old.patches or []) ++ [
           (prev.fetchpatch {
             url = "file:///home/j/its-a/secret.patch";
-	    hash = "07sx98d422589gxr8wflfpkdd0k44kbagxl3b51i56ky2wfix7rc";
-	  });
+            hash = "0ch706271vq0k2v9syppq0amg8gl367aq3xah0c701is040s9853";
+          });
 	];
       });
     })
