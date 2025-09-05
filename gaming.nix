@@ -8,7 +8,7 @@ in
 {
   nixpkgs.overlays = [
     (final: prev: {
-      prismlauncher-supersecretpersonalfork = prev.prismlauncher.override {
+      prismlauncher-unwrapped = prev.prismlauncher-unwrapped.override {
         src = pkgs.fetchgit {
           url = "file:///home/j/GitRepos/PrismLauncher";
 	  rev = "0e6517f2074e5a33f22f972e50d7324284ef9bef";
@@ -21,7 +21,7 @@ in
   ];
 
   home.packages = with pkgs; [
-    prismlauncher-supersecretpersonalfork
+    prismlauncher-secret
     pcsx2
     rpcs3
     ryubing
