@@ -31,7 +31,7 @@
     let
       system = "x86_64-linux";
       pkgs = nixpkgs.legacyPackages.${system};
-    in {
+    in rec {
       homeConfigurations."j" = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
 
