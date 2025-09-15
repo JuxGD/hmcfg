@@ -30,6 +30,7 @@ in
     vkbasalt
     gogdl
     ckan
+    personal-nur.noriskclient-launcher
     (tetrio-desktop.override {
       withTetrioPlus = true;
     })
