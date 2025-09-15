@@ -23,7 +23,7 @@
     };
 
     personal-nur = {
-      url = "file:///home/j/nur-packages";
+      url = "file:///home/j/nur-packges";
     };
   };
 
