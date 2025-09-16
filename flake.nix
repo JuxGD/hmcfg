@@ -18,7 +18,7 @@
     nix-flatpak.url = "github:gmodena/nix-flatpak";
 
     nur = {
-      url = "file:///home/j/NUR";
+      url = "github:JuxGD/NUR";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
