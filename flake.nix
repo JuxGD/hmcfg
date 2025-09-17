@@ -8,13 +8,11 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable"; # unstable branch is default
     staging.url = "github:NixOS/nixpkgs/staging";
 
-    # Specify the source of Home Manager
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    # Specify the source of nix-flatpak
     nix-flatpak.url = "github:gmodena/nix-flatpak";
 
     personal-nur = {
