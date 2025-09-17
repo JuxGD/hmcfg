@@ -5,7 +5,7 @@ let
   master = inputs.master.legacyPackages.${pkgs.system};
   staging = inputs.staging.legacyPackages.${pkgs.system};
 
-  juxgd = inputs.personal-nur.leagcyPackages.${pkgs.system};
+  juxgd = inputs.personal-nur.legacyPackages.${pkgs.system};
 in
 {
   nixpkgs.overlays = [
