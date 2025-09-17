@@ -17,8 +17,8 @@
     # Specify the source of nix-flatpak
     nix-flatpak.url = "github:gmodena/nix-flatpak";
 
-    nur = {
-      url = "github:JuxGD/NUR";
+    personal-nur = {
+      url = "github:JuxGD/nur-packges";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };

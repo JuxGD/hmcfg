@@ -4,10 +4,11 @@ let
   stable = inputs.stable.legacyPackages.${pkgs.system};
   master = inputs.master.legacyPackages.${pkgs.system};
   staging = inputs.staging.legacyPackages.${pkgs.system};
+
+  juxgd = inputs.personal-nur;
 in
 {
   nixpkgs.overlays = [
-    inputs.nur.overlays.default
     (final: prev: {
       prismlauncher-unwrapped = prev.prismlauncher-unwrapped.overrideAttrs (old: {
         patches = (old.patches or []) ++ [
@@ -35,5 +36,6 @@ in
     (tetrio-desktop.override {
       withTetrioPlus = true;
     })
+    juxgd.noriskclient-launcher
   ];
 }
