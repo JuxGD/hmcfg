@@ -40,5 +40,6 @@ in
     openai-whisper
     piper-tts
     bitwig-studio
+    element-desktop
   ];
 }
