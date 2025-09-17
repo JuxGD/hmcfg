@@ -38,7 +38,7 @@ in
     juxgd.noriskclient-launcher
   ];
 
-  nix.package = pkgs.lix;
+  nix.package = pkgs.nix;
   nix.settings = {
     substituters = [ "https://juxgd.cachix.org" ];
     trusted-public-keys = [ "juxgd.cachix.org-1:/Scj3g00eOCJAX3yxM9q6a3LREo/ppQQOqxtEavr+t4=" ];
