@@ -12,11 +12,11 @@ in
     (final: prev: {
       prismlauncher-unwrapped = prev.prismlauncher-unwrapped.overrideAttrs (old: {
         patches = (old.patches or []) ++ [
-            (prev.fetchpatch {
-              url = "http://localhost:3000/JuxGD/its-a/raw/branch/main/secret.patch";
-	      hash = "sha256-iExaBw/fAorz3vj7HJX8dV3bDlcJdFVF44s+T5whnY4=";
-	    })
-	];
+          (prev.fetchpatch {
+            url = "http://localhost:3000/JuxGD/its-a/raw/branch/main/secret.patch";
+	          hash = "sha256-iExaBw/fAorz3vj7HJX8dV3bDlcJdFVF44s+T5whnY4=";
+	        })
+	      ];
       });
     })
   ];
@@ -32,6 +32,7 @@ in
     vkbasalt
     gogdl
     ckan
+    juxgd.noriskclient-launcher
     (tetrio-desktop.override {
       withTetrioPlus = true;
     })
