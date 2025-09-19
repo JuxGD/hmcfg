@@ -15,8 +15,13 @@
 
     nix-flatpak.url = "github:gmodena/nix-flatpak";
 
+    nur = {
+      url = "github:nix-community/NUR";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     personal-nur = {
-      url = "github:JuxGD/nur-packges";
+      url = "git+file:///home/j/GitRepos/nur-packges";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
