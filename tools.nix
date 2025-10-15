@@ -41,5 +41,6 @@ in
     piper-tts
     bitwig-studio
     element-desktop
+    zoom-us
   ];
 }
