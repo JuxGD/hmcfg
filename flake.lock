@@ -109,26 +109,6 @@
         "type": "github"
       }
     },
-    "personal-nur": {
-      "inputs": {
-        "nixpkgs": [
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1758252733,
-        "narHash": "sha256-SJHeA9lFsOqQaW+pv8pNNbEiJ44zybpeFhM6CsJ33Fw=",
-        "ref": "refs/heads/nrc-launcher-fix",
-        "rev": "d2cd0844795d4fdc2df37ad0a28892e5ec69dfd2",
-        "revCount": 20,
-        "type": "git",
-        "url": "file:///home/j/GitRepos/nur-packges"
-      },
-      "original": {
-        "type": "git",
-        "url": "file:///home/j/GitRepos/nur-packges"
-      }
-    },
     "root": {
       "inputs": {
         "home-manager": "home-manager",
@@ -136,7 +116,6 @@
         "nix-flatpak": "nix-flatpak",
         "nixpkgs": "nixpkgs",
         "nur": "nur",
-        "personal-nur": "personal-nur",
         "stable": "stable",
         "staging": "staging"
       }

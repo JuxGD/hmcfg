@@ -4,9 +4,6 @@ let
   stable = inputs.stable.legacyPackages.${pkgs.system};
   master = inputs.master.legacyPackages.${pkgs.system};
   staging = inputs.staging.legacyPackages.${pkgs.system};
-
-  juxgd = inputs.personal-nur.legacyPackages.${pkgs.system};
-in
 {
   nixpkgs.overlays = [
     (final: prev: {
@@ -32,7 +29,7 @@ in
     vkbasalt
     gogdl
     ckan
-    juxgd.noriskclient-launcher
+    nur.repos.juxgd.noriskclient-launcher
     (tetrio-desktop.override {
       withTetrioPlus = true;
     })
