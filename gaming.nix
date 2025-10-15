@@ -4,6 +4,8 @@ let
   stable = inputs.stable.legacyPackages.${pkgs.system};
   master = inputs.master.legacyPackages.${pkgs.system};
   staging = inputs.staging.legacyPackages.${pkgs.system};
+
+  nur = inputs.nur;
 in
 {
   nixpkgs.overlays = [
@@ -12,9 +14,9 @@ in
         patches = (old.patches or []) ++ [
           (prev.fetchpatch {
             url = "http://localhost:3000/JuxGD/its-a/raw/branch/main/secret.patch";
-	          hash = "sha256-iExaBw/fAorz3vj7HJX8dV3bDlcJdFVF44s+T5whnY4=";
-	        })
-	      ];
+	    hash = "sha256-iExaBw/fAorz3vj7HJX8dV3bDlcJdFVF44s+T5whnY4=";
+	  })
+	];
       });
     })
   ];
