@@ -19,11 +19,6 @@
       url = "github:nix-community/NUR";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
-    personal-nur = {
-      url = "git+file:///home/j/GitRepos/nur-packges";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
   };
 
   outputs = { nixpkgs, home-manager, ... }@inputs:
