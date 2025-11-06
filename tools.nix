@@ -30,7 +30,7 @@ in
     reaper
     vesktop
     p7zip
-    bottles-unwrapped
+    bottles
     mpv
     ncmpcpp
     kdePackages.discover
