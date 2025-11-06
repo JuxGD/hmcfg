@@ -26,7 +26,7 @@ in
     rpcs3
     ryubing
     heroic
-    protonup
+    protonup-ng
     protontricks
     vkbasalt
     gogdl
