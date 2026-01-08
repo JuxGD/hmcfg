@@ -7,7 +7,7 @@ let
 in
 {
   nixpkgs.overlays = [
-    inputs.nur.overlay
+    inputs.nur.overlays
     (final: prev: {
       prismlauncher-unwrapped = prev.prismlauncher-unwrapped.overrideAttrs (old: {
         patches = (old.patches or []) ++ [
