@@ -17,7 +17,7 @@ in
     vkbasalt
     gogdl
     ckan
-    nur.repos.juxgd.noriskclient-launcher
+    noriskclient-launcher
     (tetrio-desktop.override {
       withTetrioPlus = true;
     })
