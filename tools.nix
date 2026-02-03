@@ -42,5 +42,6 @@ in
     bitwig-studio
     element-desktop
     zoom-us
+    musescore
   ];
 }
