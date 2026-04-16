@@ -28,10 +28,7 @@ in
 
     Service = {
       ExecStart = "${pkgs.writeShellScript "fluxdash-run" ''
-        #!${pkgs.bash}/bin/bash
-
-	FLUXER_BOT_TOKEN="1488739811384334882.Nm-YS_i2RsN-FS9JL4FsMZxlnuCImU7yUCxitYGqPPQ"
-	/home/j/.cargo/bin/fluxdash
+	FLUXER_BOT_TOKEN="1488739811384334882.Nm-YS_i2RsN-FS9JL4FsMZxlnuCImU7yUCxitYGqPPQ" /home/j/.cargo/bin/fluxdash
       ''}";
     };
   };
