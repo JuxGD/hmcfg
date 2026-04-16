@@ -20,6 +20,7 @@ in
       "im.dino.Dino"
       "org.gimp.GIMP"
       "org.kde.kdenlive"
+      "app.fluxer.Fluxer"
     ];
   };
 }

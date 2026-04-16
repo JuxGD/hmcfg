@@ -17,6 +17,25 @@ in
     syncthing.enable = true;
   };
 
+  systemd.user.services.fluxdash = {
+    Unit = {
+      Description = "FluxDash bot";
+    };
+
+    Install = {
+      WantedBy = [ "default.target" ];
+    };
+
+    Service = {
+      ExecStart = "${pkgs.writeShellScript "fluxdash-run" ''
+        #!/run/current-system/sw/bin/bash
+
+	FLUXER_BOT_TOKEN="1488739811384334882.Nm-YS_i2RsN-FS9JL4FsMZxlnuCImU7yUCxitYGqPPQ"
+	/home/j/.cargo/bin/fluxdash
+      ''}";
+    };
+  };
+
   home.packages = with pkgs; [
     kdePackages.kdenlive
     krita
