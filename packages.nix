@@ -21,6 +21,7 @@ in
       "org.gimp.GIMP"
       "org.kde.kdenlive"
       "app.fluxer.Fluxer"
+      "dev.vencord.Vesktop"
     ];
   };
 }
