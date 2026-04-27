@@ -40,7 +40,7 @@
         # the path to your home.nix.
         modules = [
           inputs.nix-flatpak.homeManagerModules.nix-flatpak
-	  inputs.niri.homeModules.niri
+	  inputs.niri.homeModules.config
           ./home.nix
           ./files.nix
           ./packages.nix
