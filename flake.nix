@@ -17,7 +17,6 @@
 
     niri = {
       url = "github:sodiboo/niri-flake";
-      inputs.niri-unstable.follows = "niri-package";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
