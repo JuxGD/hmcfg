@@ -9,7 +9,7 @@ in
   imports = [ inputs.niri.homeModules.config ];
   overlays = [ inputs.niri.overlays.default ];
 
-  programs.niri {
+  programs.niri = {
     enable = true;
     package = pkgs.niri-unstable;
     config = (builtins.readFile ./niri.kdl);
