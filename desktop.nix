@@ -10,7 +10,8 @@ in
   overlays = [ inputs.niri.overlays.default ];
 
   programs.niri {
+    enable = true;
+    package = pkgs.niri-unstable;
     config = (builtins.readFile ./niri.kdl);
-    package = pkgs.niri-package;
   };
 }
