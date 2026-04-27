@@ -15,6 +15,10 @@
 
     nix-flatpak.url = "github:gmodena/nix-flatpak";
 
+    niri = {
+      url = "github:sodiboo/niri-flake";
+    };
+
     nur = {
       url = "github:nix-community/NUR";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -35,6 +39,7 @@
         # the path to your home.nix.
         modules = [
           inputs.nix-flatpak.homeManagerModules.nix-flatpak
+	  inputs.niri.homeModules.config
           ./home.nix
           ./files.nix
           ./packages.nix
