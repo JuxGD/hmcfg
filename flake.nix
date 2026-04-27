@@ -15,8 +15,14 @@
 
     nix-flatpak.url = "github:gmodena/nix-flatpak";
 
+    niri-package = {
+      url = "github:urayde/niri";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     niri = {
       url = "github:sodiboo/niri-flake";
+      inputs.niri-unstable.follows = "niri-package";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 

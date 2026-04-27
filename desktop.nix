@@ -7,6 +7,10 @@ let
 in
 {
   imports = [ inputs.niri.homeModules.config ];
+  overlays = [ inputs.niri.overlays.default ];
 
-  programs.niri.config = (builtins.readFile ./niri.kdl);
+  programs.niri {
+    config = (builtins.readFile ./niri.kdl);
+    package = pkgs.niri-package;
+  };
 }
