@@ -7,7 +7,7 @@ let
 in
 {
   imports = [ inputs.niri.homeModules.config ];
-  overlays = [ inputs.niri.overlays.default ];
+  overlays = [ inputs.niri.overlays.niri ];
 
   programs.niri = {
     enable = true;
