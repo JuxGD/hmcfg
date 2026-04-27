@@ -6,7 +6,7 @@ let
   staging = inputs.staging.legacyPackages.${pkgs.system};
 in
 {
-  imports = [ inputs.niri.homeModules.niri ];
+  imports = [ inputs.niri.homeModules.config ];
 
   programs.niri.config = (builtins.readFile ./niri.kdl);
 }
