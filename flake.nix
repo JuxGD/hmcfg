@@ -15,6 +15,12 @@
 
     nix-flatpak.url = "github:gmodena/nix-flatpak";
 
+    niri = {
+      url = "github:sodiboo/niri-flake";
+      inputs.niri-unstable.follows = "niri-package";
+      inputs.nixpkgs.follows = "nixpkgs";
+    }
+
     nur = {
       url = "github:nix-community/NUR";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -35,6 +41,7 @@
         # the path to your home.nix.
         modules = [
           inputs.nix-flatpak.homeManagerModules.nix-flatpak
+	  inputs.niri.homeModules.niri
           ./home.nix
           ./files.nix
           ./packages.nix
@@ -42,7 +49,8 @@
           ./gaming.nix
           ./tools.nix
           ./development.nix
-          ./other.nix
+          ./desktop.nix
+	  ./other.nix
         ];
 
         # Optionally use extraSpecialArgs
