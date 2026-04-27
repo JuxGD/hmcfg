@@ -6,7 +6,6 @@ let
   staging = inputs.staging.legacyPackages.${pkgs.system};
 in
 {
-  imports = [ inputs.niri.homeModules.config ];
   nixpkgs.overlays = [ inputs.niri.overlays.niri ];
 
   programs.niri = {
