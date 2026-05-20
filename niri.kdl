@@ -141,10 +141,6 @@ window-rule {
     clip-to-geometry true
 }
 
-debug {
-    force-tearing
-}
-
 binds {
     // `niri msg action do-something`. <- to programmatically do anything
     Mod+Shift+M{
