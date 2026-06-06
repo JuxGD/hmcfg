@@ -20,7 +20,7 @@
     niri = {
       url = "github:sodiboo/niri-flake";
       inputs.niri-unstable.follows = "niri-package";
-      inputs.nixpkgs.follows = "nigxkgs";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
 
     nur = {
