@@ -6,7 +6,9 @@ let
   staging = inputs.staging.legacyPackages.${pkgs.system};
 in
 {
+  nixpkgs.overlays = [ inputs.niri.overlays.niri ];
   programs.niri = {
+    package = pkgs.niri-unstable;
     config = (builtins.readFile ./niri.kdl);
   };
 }
