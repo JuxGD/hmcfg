@@ -19,7 +19,7 @@ in
     ckan
     noriskclient-launcher
     (tetrio-desktop.override {
-      withTetrioPlus = false; # for now
+      withTetrioPlus = true; # for now
     })
   ];
 }
