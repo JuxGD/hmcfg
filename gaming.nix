@@ -19,7 +19,8 @@ in
     ckan
     noriskclient-launcher
     (tetrio-desktop.override {
-      withTetrioPlus = true; # for now
+      tetrio-plus = nur.repos.JuxGD.tetrio-plus;
+      withTetrioPlus = true;
     })
   ];
 }
