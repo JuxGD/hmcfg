@@ -6,6 +6,8 @@ let
   staging = inputs.staging.legacyPackages.${pkgs.system};
 in
 {
+  nixpkgs.overlays = [ inputs.nur.overlays.default ];
+
   home.packages = with pkgs; [
     prismlauncher
     pcsx2
